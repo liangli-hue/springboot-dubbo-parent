@@ -27,7 +27,8 @@ public class ItemServiceImpl implements ItemService {
      */
     @Override
     public List<Map<String, Object>> queryAllLogs() {
-        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select log.c_id 编号,log.c_value 名称,log.c_type 类型,log.c_time 时间,log.c_ip 地址,log.c_usetime 用时,log.c_port 端口 from t_log log");
+        String sql = "select log.c_id 编号,log.c_value 名称,log.c_type 类型,log.c_time 时间,log.c_ip 地址,log.c_usetime 用时,log.c_port 端口 from t_log log";
+        List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql);
         return maps;
     }
 }
