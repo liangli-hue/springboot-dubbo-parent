@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/springboot
+    driver-class-name: com.mysql.jdbc.Driver
+    # 指定自己使用的数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+
+    # DruidDataSource 其他属性配置
+    druid:
+      initialSize: 5 #数据库连接池在初始化时将创建一定数量的数据库连接放到连接池中(initialPoolSize).无论这些数据库连接是否被使用，连接池都将一直保证至少拥有这么多的连接数量
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1 FROM DUAL
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      useGlobalDataSourceStat: true
+      minPoolSize: 0#最小连接数量
+      maxPoolSize: 20#最大连接数量
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql: true
+        wall:
+          enabled: true
