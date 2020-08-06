@@ -4,12 +4,12 @@ spring:
     password: root
     url: jdbc:mysql://127.0.0.1:3306/springboot
     driver-class-name: com.mysql.jdbc.Driver
-    # Ö¸¶¨×Ô¼ºÊ¹ÓÃµÄÊý¾ÝÔ´
+    #
     type: com.alibaba.druid.pool.DruidDataSource
 
-    # DruidDataSource ÆäËûÊôÐÔÅäÖÃ
+    # DruidDataSource ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     druid:
-      initialSize: 5 #Êý¾Ý¿âÁ¬½Ó³ØÔÚ³õÊ¼»¯Ê±½«´´½¨Ò»¶¨ÊýÁ¿µÄÊý¾Ý¿âÁ¬½Ó·Åµ½Á¬½Ó³ØÖÐ(initialPoolSize).ÎÞÂÛÕâÐ©Êý¾Ý¿âÁ¬½ÓÊÇ·ñ±»Ê¹ÓÃ£¬Á¬½Ó³Ø¶¼½«Ò»Ö±±£Ö¤ÖÁÉÙÓµÓÐÕâÃ´¶àµÄÁ¬½ÓÊýÁ¿
+      initialSize: 5 #ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½Ú³ï¿½Ê¼ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½Ó·Åµï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½(initialPoolSize).ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Ê¹ï¿½Ã£ï¿½ï¿½ï¿½ï¿½Ó³Ø¶ï¿½ï¿½ï¿½Ò»Ö±ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       minIdle: 5
       maxActive: 20
       maxWait: 60000
@@ -22,8 +22,8 @@ spring:
       poolPreparedStatements: true
       maxPoolPreparedStatementPerConnectionSize: 20
       useGlobalDataSourceStat: true
-      minPoolSize: 0#×îÐ¡Á¬½ÓÊýÁ¿
-      maxPoolSize: 20#×î´óÁ¬½ÓÊýÁ¿
+      minPoolSize: 0#ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+      maxPoolSize: 20#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       filter:
         stat:
           enabled: true
