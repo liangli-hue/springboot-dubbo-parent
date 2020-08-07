@@ -30,3 +30,8 @@ spring:
           log-slow-sql: true
         wall:
           enabled: true
+logging:
+  level:
+    org.springframework.jdbc.core.JdbcTemplate: debug
+  file:
+    name: logs/app-out.log

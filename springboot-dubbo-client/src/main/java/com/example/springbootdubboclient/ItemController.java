@@ -29,7 +29,7 @@ public class ItemController {
         }
     }
 
-    @PostMapping("/queryAllLogs")
+    @RequestMapping("/queryAllLogs")
     public String queryAllLogs(){
         List<Map<String, Object>> maps = itemService.queryAllLogs();
         return maps.toString();
