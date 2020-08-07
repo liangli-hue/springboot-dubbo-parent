@@ -1,6 +1,5 @@
 package com.example.springbootdubboserver.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
